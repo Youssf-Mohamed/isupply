@@ -141,6 +141,7 @@ class InvoiceScreen extends StatelessWidget {
                     count: cubit.items[index]['count'],
                     image: cubit.items[index]['image'],
                     offer: cubit.items[index]['offer'],
+                    trusted:cubit.items[index]['trusted'],
                     cubit: cubit,
                     index:index,
                   );

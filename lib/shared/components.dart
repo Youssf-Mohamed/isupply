@@ -849,7 +849,7 @@ Widget rxCredit({required number,required used,context,required creditMode,cubit
   ),
 );
 
-Widget invoiceItem({required name,required from,pPrice,cPrice,discount,count,image,offer,required index,required context,cubit})=>  Padding(
+Widget invoiceItem({required name,required from,pPrice,cPrice,discount,count,image,offer,required index,required trusted,required context,cubit})=>  Padding(
   padding: EdgeInsets.symmetric(horizontal: 15.w, vertical: 15.h),
   child: Container(
     width: double.infinity,
@@ -886,11 +886,11 @@ Widget invoiceItem({required name,required from,pPrice,cPrice,discount,count,ima
                 ),
                 Row(
                   children: [
-                    CircleAvatar(
+                    trusted?CircleAvatar(
                       backgroundColor: white,
                       radius: 20.r,
                       child: Icon(Icons.handshake, color: cornflowerBlue),
-                    ),
+                    ):Container(),
                     SizedBox(width: 10.w,),
                     Text(
                       "${(discount).toString()}%",

@@ -51,6 +51,7 @@ class AppCubit extends Cubit<AppStates>
       "from":"Target Pharma",
       "image":"assets/item.png",
       "offer":false,
+      "trusted":true,
       "count":0,
     },
     {
@@ -61,6 +62,7 @@ class AppCubit extends Cubit<AppStates>
       "from":"Target Pharma",
       "image":"assets/item.png",
       "offer":true,
+      "trusted":false,
       "count":0,
     },
     {
@@ -70,6 +72,7 @@ class AppCubit extends Cubit<AppStates>
       "discount":33.56,
       "from":"Target Pharma",
       "offer":true,
+      "trusted":false,
       "count":0,
     }
   ];
